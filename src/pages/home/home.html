@@ -1,9 +1,20 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      TOEIC
+      <!-- <img src="assets/imgs/TOEIC (1).png" style =" width:100%; border: 5.5px solid #ddd" > -->
     </ion-title>
   </ion-navbar>
+
+  <img src="assets/imgs/TOEIC (1).png" style =" width:100%;" >
+  
+  <!-- <img src="assets/imgs/TOEIC (1).png"> -->
+  <!-- <ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar> -->
 </ion-header>
 
 
@@ -17,8 +28,8 @@
 <ion-content class="card-background-page">
 
   <ion-card>
-    <img src="/src/assets/imgs/imagesK6YU5VWN.jpg">
-    <img src="/imgs/imagesK6YU5VWN.jpg"/>
+    <img src="assets/imgs/imagesK6YU5VWN.jpg">
+    <!-- <img src="/imgs/imagesK6YU5VWN.jpg"/> -->
     <div class="card-title">São Paulo</div>
     <div class="card-subtitle">41 Listings</div>
   </ion-card>
@@ -44,3 +55,8 @@
   
 
 </ion-content>
+<ion-footer>
+    <ion-tabs>
+        <ion-tab [root]="chatRoot" tabTitle="Chat" tabIcon="chat"></ion-tab>
+       </ion-tabs>
+</ion-footer>
