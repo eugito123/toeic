@@ -7,12 +7,94 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>office</ion-title>
+    <ion-title>หมวด Office</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<!-- เมนูข้างๆ -->
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click) ="gotoPage('OfficePage')">
+          <img src="assets/imgs/money16.png">
+        Gennarel Bussiness
+      </button>
+      <button ion-item (click)="openPage(friendsPage)">
+          <img src="assets/imgs/stats.png">
+          Office
+      </button>
+      <button ion-item (click)="openPage(eventsPage)">
+          <img src="assets/imgs/stats.png">
+          Human Resource 
+      </button>
+      <button ion-item (click)="openPage(homePage)">
+          <img src="assets/imgs/stats.png">
+                   Purchasing
+      </button>
+      <button ion-item (click)="openPage(friendsPage)">
+          <img src="assets/imgs/stats.png">
+                       Finance & Banking
+      </button>
+      <button ion-item (click)="openPage(eventsPage)">
+          <img src="assets/imgs/stats.png">
+                           Management
+      </button>
+      <button ion-item (click)="openPage(eventsPage)">
+          <img src="assets/imgs/stats.png">
+                               Travel
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Close Menu
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
 
-<ion-content padding>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+<!-- จบ เมนูข้าง  ๆ  -->
 
-</ion-content>
+
+<ion-content class="cards-bg">
+
+  <ion-card>
+    <ion-card-content>
+      construction (n.) การก่อสร้าง
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-content>
+          discuss (v.) สนทนา, ถกปัญหา 
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card>
+        <ion-card-content>
+            assume (V.) สันนิษฐาน 
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+          <ion-card-content>
+              demonstrate (V.) สาธิต, แสดงให้เห็น 
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-content>
+                headquarters (n.) สํานักงานใหญ่ 
+            </ion-card-content>
+          </ion-card>
+
+       <ion-card>
+              <ion-card-content>
+                  assistant (n.) ผู้ช่วย
+              </ion-card-content>
+            </ion-card>
+  </ion-content>
