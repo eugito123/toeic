@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-
 /**
- * Generated class for the OfficePage page.
+ * Generated class for the BankingPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,22 +10,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-office',
-  templateUrl: 'office.html',
+  selector: 'page-banking',
+  templateUrl: 'banking.html',
 })
-export class OfficePage {
+export class BankingPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad OfficePage');
+    console.log('ionViewDidLoad BankingPage');
   }
 
-  gotoPage(office){
-    this.navCtrl.push(office);
-    }
-    
-  
-    
+  gotoPage(banking){
+    this.navCtrl.push(banking);
+  }
 }

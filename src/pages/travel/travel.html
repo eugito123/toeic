@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html Lang="en"> <head>
+    <meta charset="UTF-8"> 
+    <title>Introduction to Firebase</title>
+
+</head> 
+<body> 
+    <div class="container">
+    <h2>Introduction to Firebase</h2>
+    <input type="text" class="form-control" placeholder="Type it here">
+    <p>
+        <a href="#" class="btn btn-primary">Submit</a> 
+    </p>
+    <hr>
+    <ul class="list-group">
+        <li class="list-group-item">Item 1</li> 
+        <li class="list-group-item">Item 2</li>
+        <li class="list-group-item">Item 3</li> 
+        <li class="list-group-item">Item 4</li>
+        <li class="list-group-item">Item 5</li> 
+    </ul> </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/firebase.js"></script>
+    <script>
+            $(function() {
+                var input = $('input'); 
+                var button = $('a'); 
+                var ul = $('ul');
+
+                var firebaseUrl = 'https://toeic-cfd01.firebaseio.com';
+                var travelRef = new Firebase(firebaseUrl).child('travel');
+
+                listenToFirebase();
+                button.click(function() {
+
+                var text = input.val(); 
+                input.val('');
+                addToList(text);
+                });
+
+                function listenToFirebase() {
+
+                travelRef.on('value', function(snapshot) {
+                var travel = snapshot.val();
+                var i = 1;
+
+                $.each(travel, function(index, c) {
+                    addToList(parseInt(i) + ': ' + c);
+                    i += 1; 
+                    });
+                });
+            }
+                function addToList(text) {
+
+                    var li = '<li class="list-group-item">' + text + '</li>'; 
+                    ul.append(li);
+                }
+            });     
+</script> 
+</body> 
+</html>
