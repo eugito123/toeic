@@ -21,7 +21,6 @@ export class BankingPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad BankingPage');
   }
-
   gotoPage(banking){
     this.navCtrl.push(banking);
   }

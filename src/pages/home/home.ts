@@ -13,5 +13,4 @@ export class HomePage {
 gotoPage(home){
 this.navCtrl.push(home);
 }
-
 }

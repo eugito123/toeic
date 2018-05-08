@@ -21,7 +21,6 @@ export class ManagementPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ManagementPage');
   }
-
   gotoPage(management){
     this.navCtrl.push(management);
   }

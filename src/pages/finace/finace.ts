@@ -21,7 +21,6 @@ export class FinacePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad FinacePage');
   }
-
   gotoPage(finace){
     this.navCtrl.push(finace);
   }

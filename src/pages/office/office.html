@@ -12,52 +12,52 @@
   
   </ion-header>
   
-  <!-- เมนูข้างๆ -->
-  <ion-menu [content]="content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-          <button  ion-item (click) ="gotoPage('BussinssPage')">
-              <img src="assets/imgs/money16.png">
-              Gennarel Bussiness
-          </button>
-        <button  ion-item (click) ="gotoPage('OfficePage')">
-            <img src="assets/imgs/money16.png">
-          Office
-        </button>
-        <button ion-item (click)="gotoPage('HumanResourcePage')">
-            <img src="assets/imgs/stats.png">
-            Human Resource 
-        </button>
-        <button ion-item (click)="gotoPage('FinacePage')">
-            <img src="assets/imgs/stats.png">
-                     Purchasing
-        </button>
-        <button ion-item (click)="gotoPage('BankingPage')">
-            <img src="assets/imgs/stats.png">
-                         Finance & Banking
-        </button>
-        <button ion-item (click)="gotoPage('ManagementPage')">
-            <img src="assets/imgs/stats.png">
-                             Management
-        </button>
-        <button ion-item (click)="gotoPage('TravelPage')">
-            <img src="assets/imgs/stats.png">
-                                 Travel
-        </button>
-        <button ion-item (click)="closeMenu()">
-          Close Menu
-        </button>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-  
-  <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
-  <!-- จบ เมนูข้าง  ๆ  -->
+    <!-- เมนูข้างๆ -->
+    <ion-menu [content]="content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+              <button  ion-item (click) ="gotoPage('BussinssPage')">
+                  <img src="assets/imgs/money16.png">&nbsp;&nbsp;
+                  Gennarel Bussiness
+              </button>
+            <button  ion-item (click) ="gotoPage('OfficePage')">
+                <img src="assets/imgs/Office (2).png">&nbsp;&nbsp;
+              Office
+            </button>
+            <button ion-item (click)="gotoPage('HumanResourcePage')">
+                <img src="assets/imgs/deal(16).png">&nbsp;&nbsp;
+                Human Resource 
+            </button>
+            <button ion-item (click)="gotoPage('FinacePage')">
+                <img src="assets/imgs/Purchasing (2).png">&nbsp;&nbsp;
+                         Purchasing
+            </button>
+            <button ion-item (click)="gotoPage('BankingPage')">
+                <img src="assets/imgs/Finance & Banking (2).png">&nbsp;&nbsp;
+                             Finance & Banking
+            </button>
+            <button ion-item (click)="gotoPage('ManagementPage')">
+                <img src="assets/imgs/Management  (1).png">&nbsp;&nbsp;
+                                 Management
+            </button>
+            <button ion-item (click)="gotoPage('TravelPage')">
+                <img src="assets/imgs/Travel (2).png">&nbsp;&nbsp;
+                                     Travel
+            </button>
+            <button ion-item (click)="closeMenu()">
+              Close Menu
+            </button>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+      
+      <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+      <!-- จบ เมนูข้าง  ๆ  -->
   
   
   <ion-content class="cards-bg">
