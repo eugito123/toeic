@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the TutorialPage page.
+ * Generated class for the AboutPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,18 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-tutorial',
-  templateUrl: 'tutorial.html',
+  selector: 'page-about',
+  templateUrl: 'about.html',
 })
-export class TutorialPage {
+export class AboutPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TutorialPage');
+    console.log('ionViewDidLoad AboutPage');
   }
-  gotoPage(tutorial){
-    this.navCtrl.push(tutorial);
-    }
+
 }
