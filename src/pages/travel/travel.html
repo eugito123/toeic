@@ -1,61 +1,184 @@
-<!DOCTYPE html> 
-<html Lang="en"> <head>
-    <meta charset="UTF-8"> 
-    <title>Introduction to Firebase</title>
+<!--
+  Generated template for the OfficePage page.
 
-</head> 
-<body> 
-    <div class="container">
-    <h2>Introduction to Firebase</h2>
-    <input type="text" class="form-control" placeholder="Type it here">
-    <p>
-        <a href="#" class="btn btn-primary">Submit</a> 
-    </p>
-    <hr>
-    <ul class="list-group">
-        <li class="list-group-item">Item 1</li> 
-        <li class="list-group-item">Item 2</li>
-        <li class="list-group-item">Item 3</li> 
-        <li class="list-group-item">Item 4</li>
-        <li class="list-group-item">Item 5</li> 
-    </ul> </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/firebase.js"></script>
-    <script>
-            $(function() {
-                var input = $('input'); 
-                var button = $('a'); 
-                var ul = $('ul');
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
 
-                var firebaseUrl = 'https://toeic-cfd01.firebaseio.com';
-                var travelRef = new Firebase(firebaseUrl).child('travel');
+    <ion-navbar>
+      <ion-title>หมวด Travel</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+     <!-- เมนูข้างๆ -->
+  <ion-menu [content]="content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+            <button  ion-item (click) ="gotoPage('BussinssPage')">
+                <img src="assets/imgs/money16.png">&nbsp;&nbsp;
+                Gennarel Bussiness
+            </button>
+          <button  ion-item (click) ="gotoPage('OfficePage')">
+              <img src="assets/imgs/Office (2).png">&nbsp;&nbsp;
+            Office
+          </button>
+          <button ion-item (click)="gotoPage('HumanResourcePage')">
+              <img src="assets/imgs/deal(16).png">&nbsp;&nbsp;
+              Human Resource 
+          </button>
+          <button ion-item (click)="gotoPage('FinacePage')">
+              <img src="assets/imgs/Purchasing (2).png">&nbsp;&nbsp;
+                       Purchasing
+          </button>
+          <button ion-item (click)="gotoPage('BankingPage')">
+              <img src="assets/imgs/Finance & Banking (2).png">&nbsp;&nbsp;
+                           Finance & Banking
+          </button>
+          <button ion-item (click)="gotoPage('ManagementPage')">
+              <img src="assets/imgs/Management  (1).png">&nbsp;&nbsp;
+                               Management
+          </button>
+          <button ion-item (click)="gotoPage('TravelPage')">
+              <img src="assets/imgs/Travel (2).png">&nbsp;&nbsp;
+                                   Travel
+          </button>
+          <button ion-item (click)="closeMenu()">
+            Close Menu
+          </button>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    
+    <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+    <!-- จบ เมนูข้าง  ๆ  -->
+  
+  
+  <ion-content class="cards-bg">
+  
+    <ion-card>
+      <ion-card-content>
+        baggage (n.) สัมภาระ 
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card>
+        <ion-card-content>
+            beverage (n.) เครื่องดื่ม 
+        </ion-card-content>
+      </ion-card>
+    
+      <ion-card>
+          <ion-card-content>
+            cancellation (n.) การยกเลิก 
+          </ion-card-content>
+        </ion-card>
+  
+        <ion-card>
+            <ion-card-content>
+                complaint (n.) ขอรองเรียน 
+            </ion-card-content>
+          </ion-card>
+  
+          <ion-card>
+              <ion-card-content>
+                complimentary (adj.) ให้ฟรี
+              </ion-card-content>
+            </ion-card>
+  
+         <ion-card>
+                <ion-card-content>
+                    departure (n.) ลาออก
+                </ion-card-content>
+              </ion-card>
 
-                listenToFirebase();
-                button.click(function() {
+         <ion-card>
+                <ion-card-content>
+                    destination (n.) จุดหมายปลายทาง 
+                </ion-card-content>
+              </ion-card>
+            
+         <ion-card>
+                <ion-card-content>
+                    itinerary (n.) กําหนดการเดินทาง
+                </ion-card-content>
+              </ion-card>
+              
+         <ion-card>
+                <ion-card-content>
+                        board (v.) ขึ้น (ยานพาหนะ)
+                </ion-card-content>
+               </ion-card>
+            
+         <ion-card>
+                <ion-card-content>
+                        upcoming (adj.) กําลังมาถึง
+                </ion-card-content>
+               </ion-card>
+            
+         <ion-card>
+                <ion-card-content>
+                          aisle (n.) ทางเดิน, ระหว่างที่นั่ง 
+                </ion-card-content>
+               </ion-card>
+            
+         <ion-card>
+                <ion-card-content>
+                         amateur (n.) มือสมัครเล่น
+                </ion-card-content>
+               </ion-card>
 
-                var text = input.val(); 
-                input.val('');
-                addToList(text);
-                });
-
-                function listenToFirebase() {
-
-                travelRef.on('value', function(snapshot) {
-                var travel = snapshot.val();
-                var i = 1;
-
-                $.each(travel, function(index, c) {
-                    addToList(parseInt(i) + ': ' + c);
-                    i += 1; 
-                    });
-                });
-            }
-                function addToList(text) {
-
-                    var li = '<li class="list-group-item">' + text + '</li>'; 
-                    ul.append(li);
-                }
-            });     
-</script> 
-</body> 
-</html>
+         <ion-card>
+                <ion-card-content>
+                          announcement (n.) ประกาศ
+                </ion-card-content>
+               </ion-card>
+                        
+         <ion-card>
+                <ion-card-content>
+                          apologize (v.) ขอโทษ 
+                </ion-card-content>
+               </ion-card>
+                          
+         <ion-card>
+                <ion-card-content>
+                          apology (n.) คำขอโทษ 
+                </ion-card-content>
+               </ion-card>
+                        
+         <ion-card>
+                <ion-card-content>
+                          applaud (v.) ปรบมือ
+                </ion-card-content>
+               </ion-card>
+                        
+         <ion-card>
+                <ion-card-content>
+                           arrival (n.) การมาถึง
+                </ion-card-content>
+               </ion-card>
+                        
+         <ion-card>
+                <ion-card-content>
+                            arrive (v.) มาถึง
+                </ion-card-content>
+               </ion-card>
+         <ion-card>
+                <ion-card-content>
+                            audience (n.) ผู้ชม 
+                </ion-card-content>
+               </ion-card>
+                                  
+         <ion-card>
+                <ion-card-content>
+                            auditorium (n.) หอประชุม
+                </ion-card-content>
+               </ion-card>
+    </ion-content>
+  
