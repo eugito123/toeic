@@ -4,14 +4,15 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header style="display: inline-flex;">
+    <ion-navbar class="imgD x" >
+        <img src="assets/imgs/Office (2).png">
+        <ion-title >Office</ion-title>
+      </ion-navbar>
 
-    <ion-navbar>
-      <ion-title>หมวด Office</ion-title>
-    </ion-navbar>
-  
+
   </ion-header>
-  
+
     <!-- เมนูข้างๆ -->
     <ion-menu [content]="content">
         <ion-header>
@@ -31,7 +32,7 @@
             </button>
             <button ion-item (click)="gotoPage('HumanResourcePage')">
                 <img src="assets/imgs/deal(16).png">&nbsp;&nbsp;
-                Human Resource 
+                Human Resource
             </button>
             <button ion-item (click)="gotoPage('FinacePage')">
                 <img src="assets/imgs/Purchasing (2).png">&nbsp;&nbsp;
@@ -53,47 +54,47 @@
                 <img src="assets/imgs/student.png">&nbsp;&nbsp;
                                      About
             </button>
-            
+
           </ion-list>
         </ion-content>
       </ion-menu>
-      
+
       <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
       <!-- จบ เมนูข้าง  ๆ  -->
-  
-  
+
+
   <ion-content class="cards-bg">
-  
+
     <ion-card>
       <ion-card-content>
         construction (n.) การก่อสร้าง
       </ion-card-content>
     </ion-card>
-  
+
     <ion-card>
         <ion-card-content>
-            discuss (v.) สนทนา, ถกปัญหา 
+            discuss (v.) สนทนา, ถกปัญหา
         </ion-card-content>
       </ion-card>
-    
+
       <ion-card>
           <ion-card-content>
-              assume (V.) สันนิษฐาน 
+              assume (V.) สันนิษฐาน
           </ion-card-content>
         </ion-card>
-  
+
         <ion-card>
             <ion-card-content>
-                demonstrate (V.) สาธิต, แสดงให้เห็น 
+                demonstrate (V.) สาธิต, แสดงให้เห็น
             </ion-card-content>
           </ion-card>
-  
+
           <ion-card>
               <ion-card-content>
-                  headquarters (n.) สํานักงานใหญ่ 
+                  headquarters (n.) สํานักงานใหญ่
               </ion-card-content>
             </ion-card>
-  
+
          <ion-card>
                 <ion-card-content>
                     assistant (n.) ผู้ช่วย
@@ -102,19 +103,19 @@
 
               <ion-card>
                 <ion-card-content>
-                  official (n.) เจ้าหน้าที่ 
+                  official (n.) เจ้าหน้าที่
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  activate (V.) กระตุ้น 
+                  activate (V.) กระตุ้น
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  inform (V.) แจ้งให้ทราบ 
+                  inform (V.) แจ้งให้ทราบ
                 </ion-card-content>
               </ion-card>
 
@@ -126,97 +127,97 @@
 
               <ion-card>
                 <ion-card-content>
-                  task (n.) งาน, ภารกิจ 
+                  task (n.) งาน, ภารกิจ
                 </ion-card-content>
               </ion-card>
 
 
               <ion-card>
                 <ion-card-content>
-                  urgent (adj.) เร่งด่วน 
+                  urgent (adj.) เร่งด่วน
                 </ion-card-content>
               </ion-card>
 
 
               <ion-card>
                 <ion-card-content>
-                  annual (adj.) ประจํา, รายปี 
+                  annual (adj.) ประจํา, รายปี
                 </ion-card-content>
               </ion-card>
 
 
               <ion-card>
                 <ion-card-content>
-                  opposition (adj.) ความขัดแย้ง 
+                  opposition (adj.) ความขัดแย้ง
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  omit (V.) ละไว้, เว้นไว้ 
+                  omit (V.) ละไว้, เว้นไว้
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  collaborate (v.) ร่วมมือ  
+                  collaborate (v.) ร่วมมือ
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  collaborative (adj.) ที่ร่วมมือกัน (หลายฝ่าย) 
+                  collaborative (adj.) ที่ร่วมมือกัน (หลายฝ่าย)
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  banquet (n.) งานเลี้ยงรื่นเริง 
+                  banquet (n.) งานเลี้ยงรื่นเริง
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  revenue (n.) รายได้ 
+                  revenue (n.) รายได้
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  renovate (V.) ปรับปรุง, ซ่อมแซม 
+                  renovate (V.) ปรับปรุง, ซ่อมแซม
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  allocate (v.) จัดสรร (หน้าที่, เงิน) 
+                  allocate (v.) จัดสรร (หน้าที่, เงิน)
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  compatible (adj.) ที่ทํางานร่วมกันได้ 
-                </ion-card-content>
-              </ion-card>
-
-
-              <ion-card>
-                <ion-card-content>
-                  duplicate (v.) ทําสําเนา 
+                  compatible (adj.) ที่ทํางานร่วมกันได้
                 </ion-card-content>
               </ion-card>
 
 
               <ion-card>
                 <ion-card-content>
-                  affordable (adj.) ที่สามารถจ่ายได้ 
+                  duplicate (v.) ทําสําเนา
                 </ion-card-content>
               </ion-card>
 
 
               <ion-card>
                 <ion-card-content>
-                  capacity (n.) ความจุ, ความสามารถ 
+                  affordable (adj.) ที่สามารถจ่ายได้
+                </ion-card-content>
+              </ion-card>
+
+
+              <ion-card>
+                <ion-card-content>
+                  capacity (n.) ความจุ, ความสามารถ
                 </ion-card-content>
               </ion-card>
 
@@ -228,26 +229,26 @@
 
               <ion-card>
                 <ion-card-content>
-                  inventory (n.) สินค้าคงคลัง 
+                  inventory (n.) สินค้าคงคลัง
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  casually (adv.) อย่างไม่เป็นทางการ 
+                  casually (adv.) อย่างไม่เป็นทางการ
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  outdated (adj.) ล้าสมัย 
+                  outdated (adj.) ล้าสมัย
                 </ion-card-content>
               </ion-card>
 
 
               <ion-card>
                 <ion-card-content>
-                  facilitate (v.) ทําให้ง่ายขึ้น, สะดวกขึ้น 
+                  facilitate (v.) ทําให้ง่ายขึ้น, สะดวกขึ้น
                 </ion-card-content>
               </ion-card>
 
@@ -260,37 +261,37 @@
 
               <ion-card>
                 <ion-card-content>
-                  frank (adj.) ตรงไปตรงมา, ไม่อ้อมค้อม 
+                  frank (adj.) ตรงไปตรงมา, ไม่อ้อมค้อม
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  courteous (adj.) สุภาพนอบน้อม 
+                  courteous (adj.) สุภาพนอบน้อม
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  region (n.) ภูมิภาค  
+                  region (n.) ภูมิภาค
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  aware (adj.) ที่ตระหนักรู้ 
+                  aware (adj.) ที่ตระหนักรู้
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  inspection (n.) การตรวจตรา 
+                  inspection (n.) การตรวจตรา
                 </ion-card-content>
               </ion-card>
 
               <ion-card>
                 <ion-card-content>
-                  comply (V.) เชื่อฟัง, ยอมทําตาม 
+                  comply (V.) เชื่อฟัง, ยอมทําตาม
                 </ion-card-content>
               </ion-card>
 
@@ -312,4 +313,4 @@
                 </ion-card-content>
               </ion-card>
     </ion-content>
-  
+

@@ -5,13 +5,14 @@
   Ionic pages and navigation.
 -->
 <ion-header>
+    <ion-navbar class="imgD x"  style="display: inline-flex;">
+        <img src="assets/imgs/Travel (2).png">
+        <ion-title >Travel</ion-title>
+      </ion-navbar>
 
-    <ion-navbar>
-      <ion-title>หมวด Travel</ion-title>
-    </ion-navbar>
-  
+
   </ion-header>
-  
+
      <!-- เมนูข้างๆ -->
   <ion-menu [content]="content">
       <ion-header>
@@ -31,7 +32,7 @@
           </button>
           <button ion-item (click)="gotoPage('HumanResourcePage')">
               <img src="assets/imgs/deal(16).png">&nbsp;&nbsp;
-              Human Resource 
+              Human Resource
           </button>
           <button ion-item (click)="gotoPage('FinacePage')">
               <img src="assets/imgs/Purchasing (2).png">&nbsp;&nbsp;
@@ -53,47 +54,47 @@
               <img src="assets/imgs/student.png">&nbsp;&nbsp;
                                    About
           </button>
-          
+
         </ion-list>
       </ion-content>
     </ion-menu>
-    
+
     <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
     <!-- จบ เมนูข้าง  ๆ  -->
-  
-  
+
+
   <ion-content class="cards-bg">
-  
+
     <ion-card>
       <ion-card-content>
-        baggage (n.) สัมภาระ 
+        baggage (n.) สัมภาระ
       </ion-card-content>
     </ion-card>
-  
+
     <ion-card>
         <ion-card-content>
-            beverage (n.) เครื่องดื่ม 
+            beverage (n.) เครื่องดื่ม
         </ion-card-content>
       </ion-card>
-    
+
       <ion-card>
           <ion-card-content>
-            cancellation (n.) การยกเลิก 
+            cancellation (n.) การยกเลิก
           </ion-card-content>
         </ion-card>
-  
+
         <ion-card>
             <ion-card-content>
-                complaint (n.) ขอรองเรียน 
+                complaint (n.) ขอรองเรียน
             </ion-card-content>
           </ion-card>
-  
+
           <ion-card>
               <ion-card-content>
                 complimentary (adj.) ให้ฟรี
               </ion-card-content>
             </ion-card>
-  
+
          <ion-card>
                 <ion-card-content>
                     departure (n.) ลาออก
@@ -102,34 +103,34 @@
 
          <ion-card>
                 <ion-card-content>
-                    destination (n.) จุดหมายปลายทาง 
+                    destination (n.) จุดหมายปลายทาง
                 </ion-card-content>
               </ion-card>
-            
+
          <ion-card>
                 <ion-card-content>
                     itinerary (n.) กําหนดการเดินทาง
                 </ion-card-content>
               </ion-card>
-              
+
          <ion-card>
                 <ion-card-content>
                         board (v.) ขึ้น (ยานพาหนะ)
                 </ion-card-content>
                </ion-card>
-            
+
          <ion-card>
                 <ion-card-content>
                         upcoming (adj.) กําลังมาถึง
                 </ion-card-content>
                </ion-card>
-            
+
          <ion-card>
                 <ion-card-content>
-                          aisle (n.) ทางเดิน, ระหว่างที่นั่ง 
+                          aisle (n.) ทางเดิน, ระหว่างที่นั่ง
                 </ion-card-content>
                </ion-card>
-            
+
          <ion-card>
                 <ion-card-content>
                          amateur (n.) มือสมัครเล่น
@@ -141,31 +142,31 @@
                           announcement (n.) ประกาศ
                 </ion-card-content>
                </ion-card>
-                        
+
          <ion-card>
                 <ion-card-content>
-                          apologize (v.) ขอโทษ 
+                          apologize (v.) ขอโทษ
                 </ion-card-content>
                </ion-card>
-                          
+
          <ion-card>
                 <ion-card-content>
-                          apology (n.) คำขอโทษ 
+                          apology (n.) คำขอโทษ
                 </ion-card-content>
                </ion-card>
-                        
+
          <ion-card>
                 <ion-card-content>
                           applaud (v.) ปรบมือ
                 </ion-card-content>
                </ion-card>
-                        
+
          <ion-card>
                 <ion-card-content>
                            arrival (n.) การมาถึง
                 </ion-card-content>
                </ion-card>
-                        
+
          <ion-card>
                 <ion-card-content>
                             arrive (v.) มาถึง
@@ -173,14 +174,14 @@
                </ion-card>
          <ion-card>
                 <ion-card-content>
-                            audience (n.) ผู้ชม 
+                            audience (n.) ผู้ชม
                 </ion-card-content>
                </ion-card>
-                                  
+
          <ion-card>
                 <ion-card-content>
                             auditorium (n.) หอประชุม
                 </ion-card-content>
                </ion-card>
     </ion-content>
-  
+

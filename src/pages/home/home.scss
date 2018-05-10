@@ -1,13 +1,20 @@
 page-home {
-
+  ion-header{
+    height: 83px;
+  }
 }
 ion-navbar{
   padding: 0px;
 background-color:#ddd;
 }
+
 ion-content.card-background-page {
   text-align: left;
-
+      background-image: url('../assets/imgs/TOEIC (2).png');
+      -webkit-background-image: url('../assets/imgs/TOEIC (2).png');
+      opacity: 0.8;
+      background-repeat: no-repeat;
+      background-size:cover;
   ion-card {
     position: relative;
    background-color: rgb(240, 240, 240);

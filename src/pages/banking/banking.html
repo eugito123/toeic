@@ -5,13 +5,13 @@
   Ionic pages and navigation.
 -->
 <ion-header>
+    <ion-navbar class="imgD x"  style="display: inline-flex;">
+        <img src="assets/imgs/Finance & Banking (2).png">
+        <ion-title >Finace & Banking</ion-title>
+      </ion-navbar>
 
-    <ion-navbar>
-      <ion-title>หมวด Finace & Banking</ion-title>
-    </ion-navbar>
-  
   </ion-header>
-  
+
      <!-- เมนูข้างๆ -->
   <ion-menu [content]="content">
       <ion-header>
@@ -31,7 +31,7 @@
           </button>
           <button ion-item (click)="gotoPage('HumanResourcePage')">
               <img src="assets/imgs/deal(16).png">&nbsp;&nbsp;
-              Human Resource 
+              Human Resource
           </button>
           <button ion-item (click)="gotoPage('FinacePage')">
               <img src="assets/imgs/Purchasing (2).png">&nbsp;&nbsp;
@@ -58,43 +58,43 @@
         </ion-list>
       </ion-content>
     </ion-menu>
-    
+
     <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
     <!-- จบ เมนูข้าง  ๆ  -->
-  
-  
+
+
   <ion-content class="cards-bg">
-  
+
     <ion-card>
       <ion-card-content>
         invest (V.) ลงทุน
       </ion-card-content>
     </ion-card>
-  
+
     <ion-card>
         <ion-card-content>
           loan (n.) เงินกู้
         </ion-card-content>
       </ion-card>
-    
+
       <ion-card>
           <ion-card-content>
             transaction (n.) รายการธุรกรรม
           </ion-card-content>
         </ion-card>
-  
+
         <ion-card>
             <ion-card-content>
               approximate (adj.) ราวๆ ประมาณ
             </ion-card-content>
           </ion-card>
-  
+
           <ion-card>
               <ion-card-content>
                 donation (n.) การบริจาค
               </ion-card-content>
             </ion-card>
-  
+
          <ion-card>
                 <ion-card-content>
                   estimate (V.) ประมาณ
@@ -103,19 +103,19 @@
 
          <ion-card>
                 <ion-card-content>
-                  substantial (adj.) มาก, สําคัญ 
+                  substantial (adj.) มาก, สําคัญ
                 </ion-card-content>
               </ion-card>
 
          <ion-card>
                 <ion-card-content>
-                  sufficient (adj.) เพียงพอ 
+                  sufficient (adj.) เพียงพอ
                 </ion-card-content>
               </ion-card>
 
          <ion-card>
                 <ion-card-content>
-                  valid (adj.) มีเหตุผล, ถูกต้อง, ใช้ได้ 
+                  valid (adj.) มีเหตุผล, ถูกต้อง, ใช้ได้
                 </ion-card-content>
               </ion-card>
 
@@ -175,13 +175,13 @@
 
          <ion-card>
                 <ion-card-content>
-                  interest (n.) ดอกเบี้ย, ผลประโยชน์ 
+                  interest (n.) ดอกเบี้ย, ผลประโยชน์
                 </ion-card-content>
               </ion-card>
 
          <ion-card>
                 <ion-card-content>
-                  accuracy (n.) ความแม่นยํา 
+                  accuracy (n.) ความแม่นยํา
                 </ion-card-content>
               </ion-card>
 
@@ -211,7 +211,7 @@
 
          <ion-card>
                 <ion-card-content>
-                  auction (n.) การประมูล 
+                  auction (n.) การประมูล
                 </ion-card-content>
               </ion-card>
 
@@ -229,8 +229,8 @@
 
          <ion-card>
                 <ion-card-content>
-                  commit (V.) สัญญา, ผูกมัด 
+                  commit (V.) สัญญา, ผูกมัด
                 </ion-card-content>
               </ion-card>
     </ion-content>
-  
+

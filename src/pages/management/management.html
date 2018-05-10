@@ -5,11 +5,12 @@
   Ionic pages and navigation.
 -->
 <ion-header>
+    <ion-navbar class="imgD x"  style="display: inline-flex;">
+        <img src="assets/imgs/Management  (1).png">
+        <ion-title >Management</ion-title>
+      </ion-navbar>
 
-    <ion-navbar>
-      <ion-title>หมวด Management</ion-title>
-    </ion-navbar>
-  
+
   </ion-header>
 
      <!-- เมนูข้างๆ -->
@@ -31,7 +32,7 @@
         </button>
         <button ion-item (click)="gotoPage('HumanResourcePage')">
             <img src="assets/imgs/deal(16).png">&nbsp;&nbsp;
-            Human Resource 
+            Human Resource
         </button>
         <button ion-item (click)="gotoPage('FinacePage')">
             <img src="assets/imgs/Purchasing (2).png">&nbsp;&nbsp;
@@ -53,62 +54,62 @@
             <img src="assets/imgs/student.png">&nbsp;&nbsp;
                                  About
         </button>
-        
+
       </ion-list>
     </ion-content>
   </ion-menu>
-  
+
   <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
   <!-- จบ เมนูข้าง  ๆ  -->
-  
-  
+
+
   <ion-content class="cards-bg">
-  
+
     <ion-card>
       <ion-card-content>
-        expand (V.) ขยาย, เพิ่มมากขึ้น 
+        expand (V.) ขยาย, เพิ่มมากขึ้น
       </ion-card-content>
     </ion-card>
-  
+
     <ion-card>
         <ion-card-content>
-          figure out (V.) คํานวณแก้ปัญหา 
+          figure out (V.) คํานวณแก้ปัญหา
         </ion-card-content>
       </ion-card>
-    
+
     <ion-card>
           <ion-card-content>
             generate (v.) ผลิต, ก่อให้เกิด
           </ion-card-content>
         </ion-card>
-  
+
     <ion-card>
             <ion-card-content>
               implement (V.) เริ่มนําไปใช้
             </ion-card-content>
           </ion-card>
-  
+
     <ion-card>
               <ion-card-content>
-                institute (n.) สถาบัน, องค์กร 
+                institute (n.) สถาบัน, องค์กร
               </ion-card-content>
             </ion-card>
-  
+
     <ion-card>
                 <ion-card-content>
-                  interfere (V.) กาวกาย, รบกวน 
+                  interfere (V.) กาวกาย, รบกวน
                 </ion-card-content>
               </ion-card>
 
     <ion-card>
                 <ion-card-content>
-                  lengthy (adj.) ยาวมาก, ยืดยาว 
+                  lengthy (adj.) ยาวมาก, ยืดยาว
                 </ion-card-content>
               </ion-card>
 
     <ion-card>
                 <ion-card-content>
-                  minimize (v.) ทําให้ลดลง 
+                  minimize (v.) ทําให้ลดลง
                 </ion-card-content>
               </ion-card>
 
@@ -120,7 +121,7 @@
 
     <ion-card>
                 <ion-card-content>
-                  accidental (adj.) โดยบังเอิญ 
+                  accidental (adj.) โดยบังเอิญ
                 </ion-card-content>
               </ion-card>
 
@@ -144,7 +145,7 @@
 
     <ion-card>
                 <ion-card-content>
-                  committee (n.) คณะกรรมการ 
+                  committee (n.) คณะกรรมการ
                 </ion-card-content>
               </ion-card>
 
@@ -156,7 +157,7 @@
 
     <ion-card>
                 <ion-card-content>
-                  conduct (v.) จัดการ, ควบคุม 
+                  conduct (v.) จัดการ, ควบคุม
                 </ion-card-content>
               </ion-card>
 
@@ -168,7 +169,7 @@
 
     <ion-card>
                 <ion-card-content>
-                  discussion (n.) การอภิปรายแลกเปลี่ยนความ 
+                  discussion (n.) การอภิปรายแลกเปลี่ยนความ
                 </ion-card-content>
               </ion-card>
 
@@ -179,4 +180,4 @@
               </ion-card>
 
     </ion-content>
-  
+

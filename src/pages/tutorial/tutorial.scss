@@ -1,11 +1,11 @@
 page-tutorial {
 
     .tutorial-page {
-      background-image: url('../assets/imgs/TOEIC (2).png');
-      -webkit-background-image: url('../assets/imgs/TOEIC (2).png');
-      opacity: 0.8;
-      background-repeat: no-repeat;
-      background-size:cover;
+      // background-image: url('../assets/imgs/TOEIC (2).png');
+      // -webkit-background-image: url('../assets/imgs/TOEIC (2).png');
+      // opacity: 0.8;
+      // background-repeat: no-repeat;
+      // background-size:cover;
         .toolbar-background {
           background: #fff;
           border-color: transparent;
@@ -42,7 +42,9 @@ page-tutorial {
 
       }
       .img{
-        margin: 21%;
+        margin: 17%;
+        margin-bottom: 6%;
+        margin-top: 30%;
       }
       .imgf{
         margin: 21%;

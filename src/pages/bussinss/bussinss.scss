@@ -4,7 +4,26 @@ page-bussinss {
 .cards-bg{
 background-image: url('../assets/imgs/TOEIC (2).png');
 -webkit-background-image: url('../assets/imgs/TOEIC (2).png');
-opacity: 0.8;
+
 background-repeat: no-repeat;
 background-size:cover;
+
+}
+ion-navbar.imgD{
+  background-image: url('../assets/imgs/TOEIC (2).png');
+  -webkit-background-image: url('../assets/imgs/TOEIC (2).png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  display:inline-flex
+}
+.toolbar-content-md{
+  display:inline-flex
+}
+.x{
+  display:inline-flex
+  ;
+  img{
+    width: 25px;
+    height: 25px;
+  }
 }
