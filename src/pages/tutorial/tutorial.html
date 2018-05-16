@@ -19,7 +19,7 @@
       <ion-slide *ngFor="let slide of slides">
 
           <!-- <ion-buttons end> -->
-            <button float-right ion-button color="primary">Skip</button>
+            <button  float-right ion-button color="primary" (click) ="gotoPage('BussinssPage')"> Skip </button>
           <!-- </ion-buttons> -->
        <div class="img">
         <img [src]="slide.image" class="slide-image"/>
@@ -32,9 +32,11 @@
 <div class="imgf">
         <img src="assets/imgs/trophy.png" class="slide-image"/>
         <h2 class="slide-title">Ready to Read?</h2>
-        <button ion-button large clear icon-end color="primary">
+        <button ion-button large clear icon-end color="primary" (click) ="gotoPage('BussinssPage')">
+            <!-- <ion-item (click) ="gotoPage('BussinssPage')"></ion-item> -->
           Continue
           <ion-icon name="arrow-forward"></ion-icon>
+          
         </button>
       </div>
       </ion-slide>

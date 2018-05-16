@@ -22,17 +22,17 @@ export class TutorialPage {
   slides = [
     {
       title: "Welcome to the App!",
-      description: "ในแอพพลิเคชั่นนี้มีคำศัพท์มากกว่า 200 คำ และแบ่งเป็น 7 หมวดหมู่",
+      description: "The application has over 200 words and is divided into <br>7 categories.",
       image: "assets/imgs/vocabulary256.png",
     },
     {
       title: "Can you search everytime.",
-      description: "<b>ค้นหาคำศัพท์อย่างรวดเร็ว</b> ทั้งภาษาไทยและภาษาอังกฤษ",
+      description: "Quickly find words in both Thai and English.",
       image: "assets/imgs/growth.png",
     },
     {
-      title: "สามารถอ่านได้ในทุกที่ ทุกเวลา",
-      description: "<b>เพื่อการเรียนรู้และจดจำที่มีประสิทธิภาพ</b> เพราะการเรียนรู้ไม่จำเป็นต้องอยู่แค่เพียงหนังสือ",
+      title: "Can you read everytime.",
+      description: "To learn and remember the effective, because learning don't have to be just in the book.",
       image: "assets/imgs/idea.png",
     }
   ];
